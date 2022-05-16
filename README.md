@@ -3,7 +3,7 @@
 
 
 
-background service is in folder android.
+background service is in src/android.
 
 Insert mac address in line 81  and a url to api(the url in code is not valid) at line 89  at BackgroundFetchHeadlessTask class
 
