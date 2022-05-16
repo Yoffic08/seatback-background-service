@@ -57,7 +57,7 @@ export class ScanPage implements OnInit {
         onEvent,
         onTimeout);
       BackgroundFetch.scheduleTask({
-        taskId: 'cordova-background-fetch',
+        taskId: 'cordova-background-fetch', 
         delay: 5000,       // milliseconds
         forceAlarmManager: true,
         periodic: true,
