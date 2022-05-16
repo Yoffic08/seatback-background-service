@@ -1,0 +1,13 @@
+<div class="main-container">
+  <button class="scan-button" (click)="startScan()">Start Scan</button>
+  <div style="font-size: 18px;color: red;">
+    {{message}}
+  </div>
+  <div *ngFor="let device of devices">
+    <div class="device" (click)=" device.active ? closeConnection(device) : connect(device)"
+      class="{{device.active ? 'green-device' : 'red-device'}}">
+      {{device.name}}
+    </div>
+  </div>
+
+</div>

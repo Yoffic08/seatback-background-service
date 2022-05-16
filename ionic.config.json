@@ -1,0 +1,7 @@
+{
+  "name": "seatback-background-tester",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
