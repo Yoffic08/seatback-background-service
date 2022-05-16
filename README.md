@@ -9,6 +9,8 @@ Insert mac address in line 81  and a url to api(the url in code is not valid) at
 
 Insert your ip at resources/android/network_security_config.xml
 
+Change ip in environment.ts
+
 
 for testing use:
 
