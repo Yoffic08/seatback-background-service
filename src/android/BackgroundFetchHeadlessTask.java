@@ -78,7 +78,7 @@ public class BackgroundFetchHeadlessTask implements HeadlessTask {
             String str = sharedpreferences.getString("token1", "");
             Log.d(BackgroundFetch.TAG, "pref.getString : " + str);
             BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-            BluetoothDevice device = bluetoothAdapter.getRemoteDevice("00:80:E1:26:28:96");
+            BluetoothDevice device = bluetoothAdapter.getRemoteDevice("00:80:E1:26:EE:A4");
 
             Context context = this.getOuter().mContext;
 
@@ -86,7 +86,7 @@ public class BackgroundFetchHeadlessTask implements HeadlessTask {
                 public void sendToDb(byte[] posture) {
                     URL url = null;
                     try {
-                        url = new URL("http://10.191.5.72:8084/v1.0/ai/record");
+                        url = new URL("http://10.0.0.2:8084/v1.0/ai/record");
                         HttpURLConnection http = (HttpURLConnection) url.openConnection();
                         http.setRequestMethod("POST");
                         http.setDoOutput(true);
